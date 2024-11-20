@@ -104,6 +104,37 @@
             margin-right: 5px; /* Optional space between the image and text */
         }
     </style>
+
+<style>
+    /* Container for the image and text */
+    .bio-container {
+        display: flex;
+        align-items: flex-start; /* Align items to the top */
+    }
+
+    /* Styling for the image */
+    .bio-container img {
+        width: 50px; /* Set the image size */
+        height: 50px;
+        margin-right: 20px; /* Space between the image and text */
+    }
+
+    /* Styling for the text */
+    .bio-container p {
+        font-family: "Times New Roman", Times, serif;
+        font-size: 16px;
+        color: #333; /* Text color */
+        margin-bottom: 10px; /* Space between paragraphs */
+    }
+
+    /* Styling for the heading */
+    .bio-container h3 {
+        font-family: "Times New Roman", Times, serif;
+        color: #333;
+    }
+</style>
+
+	
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <style>
         /* Custom styles for icon size and spacing */
@@ -153,11 +184,17 @@ vertical-align: bottom;
           </div>
         </div>
 
-    <h3 id = "Biography" ><img src="imgs/newton2.jpg" alt="Icon" class="emoji-image">About</h3>
-<p>
-    Hello, welcome to my homepage!
-</p>
-	<p>My name is Weijieying Ren, I also generally use the name as `Xiaoying Ren' in my research and daily life for its simplicity.</p>
+ <div class="bio-container">
+    <!-- Icon and Title (heading) -->
+    <h3 id="Biography"><img src="imgs/newton2.jpg" alt="Icon" class="emoji-image">About</h3>
+
+    <!-- Text content (three paragraphs) -->
+    <div>
+        <p>Hello, welcome to my homepage!</p>
+        <p>My name is Weijieying Ren, I also generally use the name `Xiaoying Ren' in my research and daily life for its simplicity.</p>
+        <p>Feel free to explore the website to know more about my work and interests!</p>
+    </div>
+</div>
 	<p> I'm PhD student from the College of Information Sciences and Technology in the Pennsylvania State University, super lucky to be advised by my best advisor <a href="http://faculty.ist.psu.edu/vhonavar/"> Prof.Honavar </a>. </p>
        <p> 
 	I obtain my bacholar from HeFei University of Technology (<a href= "https://www.hfut.edu.cn/">HFUT</a>) and master degree from University of Science and Technology (<a href= "https://en.ustc.edu.cn/">USTC</a>), respectively.
