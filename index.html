@@ -32,6 +32,29 @@
             color: #000; /* Text color (black) */
         }
     </style>
+
+<style>
+    .image-figure {
+        position: relative; /* To position the text over the image */
+        display: inline-block;
+        width: 100%; /* Adjust the width of the figure */
+        height: 300px; /* Set the height as needed */
+        background: url('sea3.jpg') no-repeat center center; /* Background image */
+        background-size: cover; /* Ensure the image covers the whole figure */
+        border-radius: 10px; /* Optional: rounded corners */
+    }
+
+    .image-figure h5 {
+        position: absolute;
+        bottom: 20px; /* Adjust this value to control the position of the text */
+        left: 20px; /* Adjust this value to control the position of the text */
+        color: white; /* Text color */
+        font-family: "Times New Roman", Times, serif; /* Text font */
+        font-weight: bold; /* Make the text bold */
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Optional: text shadow for better visibility */
+    }
+</style>
+	
 </head>
 <body>
 
@@ -164,10 +187,11 @@ models), and Deployment (conversational system for lab test order and diagnosis 
 		
         <div class="col">    
             <h3 id="Publications">Research</h3>
+<figure class="image-figure">
+    <h5 id="Publications">Publications</h5>
+</figure>
+		
 
-    <div class="text-box">
-        <h5 id="Publications">Publications</h5>
-    </div>
            
             <ol>
 	  <li> 
