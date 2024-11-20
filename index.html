@@ -78,17 +78,21 @@
     }
 </style>
 <style>
+    /* Use flexbox for horizontal alignment */
+    .bio-container {
+        display: flex; /* Align items horizontally */
+        align-items: center; /* Vertically align the text and icon */
+    }
+
     /* Style for the figure containing the icon */
     .icon-figure {
-        display: inline-block; /* Align the figure with the text */
-        width: 50px; /* Adjust the width of the icon */
+        width: 40px; /* Adjust the width of the icon */
         height: 40px; /* Adjust the height of the icon */
         margin-right: 10px; /* Space between the icon and the text */
     }
 
     /* Style for the text */
     .bio-title {
-        display: inline-block; /* Ensure the text stays inline with the icon */
         font-family: "Times New Roman", Times, serif; /* Customize font */
         color: #333; /* Text color */
     }
@@ -109,12 +113,15 @@
             <div> <p> <a href="https://github.com/WeijieyingRen">Github Page</a><br> </div>
         </div>
 
-        <!-- Entries Column -->
-        <div class="col-md-8 col-xs-12">
-            <div class="col" style="margin-top:3%; text-align:justify;">   
-		<figure class="icon-figure">
-    <img src="imgs/newton.jpg" alt="Icon" style="width: 100%; height: 100%; border-radius: 5px;"> <!-- Replace with your icon's image -->
-</figure>
+
+	    <div class="bio-container">
+    <figure class="icon-figure">
+        <img src="imgs/newton2" alt="Icon" style="width: 100%; height: 100%; border-radius: 5px;"> <!-- Replace with your icon's image -->
+    </figure>
+
+    <h3 id="Biography" class="bio-title">About</h3>
+</div>
+	    
                <h3 id="Biography">About</h3>
 		    <p>Hello, welcome to my homepage &#128512.</p>
                 <p>
