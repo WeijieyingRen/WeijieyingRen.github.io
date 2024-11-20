@@ -77,26 +77,25 @@
         background-color: black; /* Hamburger icon color */
     }
 </style>
-<style>
-    /* Use flexbox for horizontal alignment */
-    .bio-container {
-        display: flex; /* Align items horizontally */
-        align-items: center; /* Vertically align the text and icon */
-    }
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <style>
+        /* Custom styles for icon size and spacing */
+        .bio-container {
+            display: flex;
+            align-items: center;
+        }
 
-    /* Style for the figure containing the icon */
-    .icon-figure {
-        width: 40px; /* Adjust the width of the icon */
-        height: 40px; /* Adjust the height of the icon */
-        margin-right: 10px; /* Space between the icon and the text */
-    }
+        .bio-container img {
+            width: 40px; /* Set the size of the icon */
+            height: 40px;
+            margin-right: 10px; /* Space between icon and text */
+        }
 
-    /* Style for the text */
-    .bio-title {
-        font-family: "Times New Roman", Times, serif; /* Customize font */
-        color: #333; /* Text color */
-    }
-</style>
+        .bio-container h3 {
+            font-family: "Times New Roman", Times, serif; /* Customize font */
+            color: #333; /* Text color */
+        }
+    </style>
 	
   <!-- Page Content -->
   <div class="container">
@@ -114,8 +113,20 @@
         </div>
 
 
-<div class="row"> <div class="col-md-10 col-xs-6"> <img class="img-responsive" src="imgs/wjyren.png" alt=""></div></div><br>
-	    
+<div class="container">
+        <div class="row">
+            <!-- Icon on the left -->
+            <div class="col-md-1 col-xs-2">
+                <img src="imgs/wjyren.png" alt="Icon" class="img-responsive">
+            </div>
+
+            <!-- Text on the right -->
+            <div class="col-md-11 col-xs-10">
+                <h3 id="Biography">About</h3>
+            </div>
+        </div>
+    </div>
+    
                <h3 id="Biography">About</h3>
 		    <p>Hello, welcome to my homepage &#128512.</p>
                 <p>
