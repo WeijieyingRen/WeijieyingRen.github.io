@@ -38,16 +38,72 @@
 
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav">
-            <li><a href="index.html">Home</a></li>
-	    <li><a href="#Biography">Biography</a></li> 
-	    <li><a href="#Topics">Research Interests</a></li> 
-            <li><a href="#Research">Research</a></li>          
-            <li><a href="#Intern">Intern Experience</a></li> 
-            <li><a href="#Service">Service</a></li> 
-            <li><a href="#Award">Award</a></li> 
-            <li><a href="#Misc">Misc</a></li>    
-        </ul>
+
+<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#Biography">Biography</a></li>
+                <li><a href="#Topics">Research Interests</a></li>
+                <li><a href="#Research">Research</a></li>
+                <li><a href="#Intern">Intern Experience</a></li>
+                <li><a href="#Service">Service</a></li>
+                <li><a href="#Award">Award</a></li>
+                <li><a href="#Misc">Misc</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Add custom CSS -->
+<style>
+    /* Modify the navbar background color */
+    .navbar-inverse {
+        background-color: #333;  /* Dark background for the navbar */
+        border-color: #080808;
+    }
+
+    /* Modify the color of the navbar links */
+    .navbar-inverse .navbar-nav > li > a {
+        color: #fff;  /* White text color for the links */
+        font-size: 18px;  /* Slightly larger font size for better readability */
+        padding: 15px 20px;  /* Add some padding for better spacing */
+    }
+
+    /* Add hover effect for the links */
+    .navbar-inverse .navbar-nav > li > a:hover {
+        background-color: #555;  /* Lighter grey background when hovered */
+        color: #fff;  /* Keep text white */
+    }
+
+    /* Add active link styling */
+    .navbar-inverse .navbar-nav > .active > a {
+        background-color: #4CAF50;  /* Bright green for active link */
+        color: white;  /* Keep the text white */
+    }
+
+    /* Make sure the toggle button is visible on small screens */
+    .navbar-toggle {
+        border-color: #fff;  /* White border for the toggle button */
+    }
+    .navbar-toggle .icon-bar {
+        background-color: #fff;  /* White icon bars */
+    }
+</style>
+
+	      
+
 
 <ul class="nav navbar-nav navbar-right">
         <!-- Google Scholar Icon -->
