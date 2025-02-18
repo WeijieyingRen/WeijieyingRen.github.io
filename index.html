@@ -42,27 +42,25 @@
         border: none;
     }
 
-    /* Navbar links: remove background and box */
-    .navbar.navbar-inverse .navbar-nav > li > a {
+    /* Remove background and box for navbar links */
+    .navbar-nav > li > a {
         color: gray; /* Text color */
         font-weight: bold;
-        background: none; /* Remove background */
+        background-color: transparent; /* Remove background */
+        border: none; /* No borders */
         padding: 10px 15px; /* Adjust padding for better spacing */
-        border: none; /* Ensure no border is applied */
     }
 
-    /* Remove white box on hover and keep transparent background */
-    .navbar.navbar-inverse .navbar-nav > li > a:hover {
+    /* Remove background on hover and ensure no box */
+    .navbar-nav > li > a:hover {
         color: #ffcc00; /* Hover text color */
         background-color: transparent; /* Ensure no background on hover */
     }
 
-    /* Remove padding or borders around navbar links */
-    .navbar-nav > li > a {
-        padding: 0;
+    /* Remove padding or borders around navbar items */
+    .navbar-nav > li {
         margin: 0;
-        border: none;
-        background: none;
+        padding: 0;
     }
 </style>
 
