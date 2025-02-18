@@ -61,22 +61,13 @@
 }
 
 .navbar-inverse .navbar-nav {
-  position: static; /* Positions links over the background */
-  top: 30%;           /* Vertically centers them */
-  left: 30%;          /* Horizontally centers them */
+  position: absolute; /* Positions links over the background */
+  top: 50%;           /* Vertically centers them */
+  left: 50%;          /* Horizontally centers them */
   transform: translate(-50%, -50%);
   display: flex;
   gap: 20px;
 }
-	    
-    
-   
-    /* Navbar Text Styles */
-    .navbar-inverse .navbar-nav > li > a {
-      color: white; /* White text */
-      font-weight: bold; /* Bold text */
-    }
-
     .navbar-inverse .navbar-nav > li > a:hover {
       color: #ffcc00; /* Hover effect color */
     }
@@ -88,22 +79,10 @@
     .navbar-inverse .icon-bar {
       background-color: black; /* Hamburger icon color */
     }
-
-.navbar-inverse .navbar-nav {
-  display: flex;          /* optional for custom spacing */
-  gap: 20px;              /* optional for spacing between items */
-  /* No absolute positioning, top, left, transform */
-}
-
     .navbar-inverse .navbar-nav > li > a {
       font-size: 20px; /* Adjust font size */
       color: white;
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Optional text shadow for better readability */
-    }
-
-    /* Make navbar links bold on hover */
-    .navbar-inverse .navbar-nav > li > a:hover {
-      color: #ffcc00;
     }
 
    .emoji-image {
