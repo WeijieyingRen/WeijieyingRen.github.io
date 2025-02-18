@@ -37,25 +37,34 @@
         background-color: #ffffff; /* Ensures white background inside */
     }
 
-    /* Improve navbar visibility */
+    /* Navbar background with image */
     .navbar.navbar-inverse {
         background: url('imgs/spring.jpg') no-repeat center center;
         background-size: cover;
         border: none;
     }
 
-    /* Navbar links: remove background, set color, and adjust hover */
+    /* Navbar links: remove background and box */
     .navbar.navbar-inverse .navbar-nav > li > a {
         color: gray; /* Text color */
         font-weight: bold;
-        background: none; /* Remove background box */
+        background: none; /* Remove background */
         padding: 10px 15px; /* Adjust padding for better spacing */
+        border: none; /* Ensure no border is applied */
     }
 
-    /* Hover effect for navbar links */
+    /* Remove white box on hover and keep transparent background */
     .navbar.navbar-inverse .navbar-nav > li > a:hover {
         color: #ffcc00; /* Hover text color */
         background-color: transparent; /* Ensure no background on hover */
+    }
+
+    /* Remove padding or borders around navbar links */
+    .navbar-nav > li > a {
+        padding: 0;
+        margin: 0;
+        border: none;
+        background: none;
     }
 </style>
 
