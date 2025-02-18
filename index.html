@@ -24,6 +24,24 @@
 
   <!-- Custom CSS -->
   <style>
+    /* Body and page layout */
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #f4f4f4; /* Optional background color */
+    }
+
+    /* Container for the content */
+    .container {
+        width: 80%; /* Control content width */
+        max-width: 1200px; /* Limit the maximum width */
+        margin: 0 auto; /* Center the content */
+        padding: 20px;
+        background-color: white; /* Background color for content area */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional shadow for a neat effect */
+    }
+
     /* Custom Navbar Styles */
     .navbar-inverse {
         background: url('imgs/spring.jpg') no-repeat center center; /* Background image */
@@ -52,6 +70,7 @@
     .bio-container {
         display: flex;
         align-items: center; /* Center items vertically */
+        margin-bottom: 20px; /* Add space between sections */
     }
 
     .bio-container img {
@@ -82,12 +101,12 @@
     }
 
     .emoji-image {
-	width: 70px; /* Size similar to an emoji */
-	height: 70px;
-	vertical-align: flex-end; /* Align image with text */
-	margin-right: 5px; /* Optional space between the image and text */
-   }
-	  
+        width: 70px; /* Size similar to an emoji */
+        height: 70px;
+        vertical-align: flex-end; /* Align image with text */
+        margin-right: 5px; /* Optional space between the image and text */
+    }
+    
     /* Ordered List Style */
     ol {
         font-family: Arial, Helvetica, sans-serif;
@@ -95,7 +114,6 @@
     }
   </style>
 </head>
-
 
 <body>
 <!-- Navigation -->
