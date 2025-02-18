@@ -86,15 +86,11 @@
       background-color: black; /* Hamburger icon color */
     }
 
-    /* Overlay Text on Navbar Image */
-    .navbar-inverse .navbar-nav {
-      position: absolute; /* Position links over the image */
-      top: 50%; /* Center vertically */
-      left: 50%; /* Center horizontally */
-      transform: translate(-50%, -50%); /* Adjust positioning */
-      display: flex; /* Align items horizontally */
-      gap: 20px; /* Space between each link */
-    }
+.navbar-inverse .navbar-nav {
+  display: flex;          /* optional for custom spacing */
+  gap: 20px;              /* optional for spacing between items */
+  /* No absolute positioning, top, left, transform */
+}
 
     .navbar-inverse .navbar-nav > li > a {
       font-size: 20px; /* Adjust font size */
