@@ -32,33 +32,33 @@
       height: 100%;
     }
 
-    /* Container to control the content width and center */
     .container {
-      overflow: visible;
-      width: 90%; /* Control content width */
-      max-width: 1200px; /* Limit the maximum width */
-      margin: 0 auto; /* Center the content */
-      padding: 10px;
-      background-color: white; /* Background color for content area */
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional shadow for neat effect */
-    }
+  overflow: visible;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0; /* Remove padding here to avoid the white box */
+  background: transparent; /* Remove background color */
+  box-shadow: none; /* Remove shadow effect */
+}
 
-    /* Custom Navbar Styles */
-    .navbar-inverse {
-      position: relative; /* Set the navbar to relative for positioning */
-      background: url('imgs/spring.jpg') no-repeat center center; /* Background image */
-      background-size: cover; /* Ensure image covers the navbar */
-      background-attachment: fixed; /* Fix the image in place */
-      border: none; /* Remove border */
-      height: 30px; /* Set the height of the navbar */
-      padding: 0;
-      z-index: 1
-    }
+/* Add padding inside the actual content area instead */
+.content-wrapper {
+  padding: 10px; /* Keeps text from being cut off */
+  background-color: white; /* Only applies to content, not navbar */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional shadow */
+}
 
-     .content-wrapper {
-     margin-top: 0; /* Ensure no margin from the top */
-     padding-top: 0; /* Remove padding above the content */
-	}
+.navbar-inverse {
+  position: relative;
+  background: url('imgs/spring.jpg') no-repeat center center;
+  background-size: cover;
+  height: 30px;
+  padding: 0;
+  z-index: 10; /* Ensures it's above other elements */
+}
+	    
+   
 
     /* Navbar Text Styles */
     .navbar-inverse .navbar-nav > li > a {
