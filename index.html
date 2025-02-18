@@ -1,234 +1,429 @@
 <!DOCTYPE html>
 <!--
     Plain-Academic by Vasilios Mavroudis
-    Modified by Weijieying Ren
+    modified by Weijieying Ren
     Released under the Simplified BSD License/FreeBSD (2-clause) License.
     https://github.com/mavroudisv/plain-academic
 -->
 
 <html lang="en">
-
 <head>
-    <title>Weijieying Ren</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Weijieying Ren</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 
-    <!-- External Stylesheets and Scripts -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <link href='https://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<body>
 
+
+<!-- Navigation -->
+      <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+	  <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+      </div>
+
+<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+            <li><a href="index.html">Home</a></li>
+	    <li><a href="#Biography">Biography</a></li> 
+	    <li><a href="#Topics">Research Interests</a></li> 
+            <li><a href="#Research">Research</a></li>          
+            <li><a href="#Intern">Intern Experience</a></li> 
+            <li><a href="#Service">Service</a></li> 
+            <li><a href="#Award">Award</a></li> 
+            <li><a href="#Misc">Misc</a></li>    
+        </ul>
+
+<ul class="nav navbar-nav navbar-right">
+        <!-- Google Scholar Icon -->
+        <li><a href="https://scholar.google.com/citations?user=V-J8XikAAAAJ&hl=en" target="_blank">
+            <i class="fa-brands fa-google-scholar" style="font-size: 30px; color: #4285F4;"></i>
+        </a></li>
+
+        <!-- GitHub Icon -->
+        <li><a href="https://github.com/WeijieyingRen" target="_blank">
+            <i class="fab fa-github" style="font-size: 30px; color: black;"></i>
+        </a></li>
+
+        <!-- Email Icon -->
+        <li><a href="mailto:wjyren@psu.edu?subject=%5BWebsite%5D%20Hi%20Weijieying!" class="social-icon-link-pad w-inline-block">
+            <i class="fas fa-envelope" style="font-size: 30px;"></i>
+        </a></li>
+    </ul>	      
+      </div>
+	  </div>
+	</nav>
+
+<style>
+    /* Custom Navbar Styles */
+    .navbar-inverse {
+        background: url('imgs/spring.jpg') no-repeat center center; /* New background image */
+        background-size: cover; /* Ensure image covers the entire navbar */
+        border: none; /* Remove border */
+    }
+
+    .navbar-inverse .navbar-nav > li > a {
+        color: white; /* White text for better contrast with the image */
+        font-weight: bold; /* Make text bold */
+    }
+
+    .navbar-inverse .navbar-nav > li > a:hover {
+        color: #ffcc00; /* Highlight color on hover */
+    }
+
+    .navbar-inverse .navbar-toggle {
+        background-color: white; /* Toggle button color */
+    }
+
+    .navbar-inverse .icon-bar {
+        background-color: black; /* Hamburger icon color */
+    }
+</style>
     <style>
-        /* Global Styles */
-        body {
-            background-color: #f5f5f5;
-            margin: 0;
-            padding: 0;
-        }
-
-        .container {
-            background-color: #ffffff;
-            border-radius: 10px;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-            margin: 30px auto;
-            max-width: 80%;
-        }
-
-        .section {
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 10px;
-            background-color: #ffffff;
-        }
-
-        /* Navbar Styles */
-        .navbar.navbar-inverse {
-            background: url('imgs/spring.jpg') no-repeat center center;
-            background-size: cover;
-            border: none;
-        }
-
-        .navbar-nav > li > a {
-            color: gray;
-            font-weight: bold;
-            background-color: transparent;
-            border: none;
-            padding: 10px 15px;
-        }
-
-        .navbar-nav > li > a:hover {
-            color: #ffcc00;
-            background-color: transparent;
-        }
-
-        .navbar-nav > li {
-            margin: 0;
-            padding: 0;
-        }
-
-        /* Navbar Icons */
-        .navbar-inverse .navbar-nav > li > a {
-            color: gray;
-            font-weight: bold;
-        }
-
-        .navbar-inverse .navbar-nav > li > a:hover {
-            color: #ffcc00;
-        }
-
-        .navbar-inverse .navbar-toggle {
-            background-color: white;
-        }
-
-        .navbar-inverse .icon-bar {
-            background-color: black;
-        }
-
-        /* Custom Styles */
         .emoji-image {
-            width: 70px;
+            width: 70px; /* Size similar to an emoji */
             height: 70px;
-            vertical-align: flex-end;
-            margin-right: 5px;
-        }
-
-        .bio-container {
-            display: flex;
-            align-items: flex-start;
-        }
-
-        .bio-container img {
-            width: 50px;
-            height: 50px;
-            margin-right: 20px;
-        }
-
-        .bio-container p {
-            font-family: "Times New Roman", Times, serif;
-            font-size: 16px;
-            color: #333;
-            margin-bottom: 10px;
-        }
-
-        .bio-container h3 {
-            font-family: "Times New Roman", Times, serif;
-            color: #333;
-        }
-
-        /* Font Size for Navbar */
-        .navbar-nav li a {
-            font-size: 18px;
-            font-weight: bold;
-        }
-
-        /* List Styling */
-        ol {
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 18px;
+            vertical-align: flex-end; /* Align image with text */
+            margin-right: 5px; /* Optional space between the image and text */
         }
     </style>
 
-</head>
+<style>
+    /* Container for the image and text */
+    .bio-container {
+        display: flex;
+        align-items: flex-start; /* Align items to the top */
+    }
 
-<body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                    data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-            </div>
+    /* Styling for the image */
+    .bio-container img {
+        width: 50px; /* Set the image size */
+        height: 50px;
+        margin-right: 20px; /* Space between the image and text */
+    }
 
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#Biography">Biography</a></li>
-                    <li><a href="#Topics">Research Interests</a></li>
-                    <li><a href="#Research">Research</a></li>
-                    <li><a href="#Intern">Intern Experience</a></li>
-                    <li><a href="#Service">Service</a></li>
-                    <li><a href="#Award">Award</a></li>
-                    <li><a href="#Misc">Misc</a></li>
-                </ul>
+    /* Styling for the text */
+    .bio-container p {
+        font-family: "Times New Roman", Times, serif;
+        font-size: 16px;
+        color: #333; /* Text color */
+        margin-bottom: 10px; /* Space between paragraphs */
+    }
 
-                <ul class="nav navbar-nav navbar-right">
-                    <!-- Social Links -->
-                    <li><a href="https://scholar.google.com/citations?user=V-J8XikAAAAJ&hl=en" target="_blank">
-                            <i class="fa-brands fa-google-scholar" style="font-size: 30px; color: #4285F4;"></i>
-                        </a></li>
-                    <li><a href="https://github.com/WeijieyingRen" target="_blank">
-                            <i class="fab fa-github" style="font-size: 30px; color: black;"></i>
-                        </a></li>
-                    <li><a href="mailto:wjyren@psu.edu?subject=%5BWebsite%5D%20Hi%20Weijieying!" class="social-icon-link-pad w-inline-block">
-                            <i class="fas fa-envelope" style="font-size: 30px;"></i>
-                        </a></li>
-                </ul>
-            </div>
+    /* Styling for the heading */
+    .bio-container h3 {
+        font-family: "Times New Roman", Times, serif;
+        color: #333;
+    }
+</style>
+
+	
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <style>
+        /* Custom styles for icon size and spacing */
+.bio-container {
+    display: flex;
+    align-items: center;
+}
+
+.bio-container img {
+    width: 50px; /* Set the size of the icon */
+    height: 44px;
+    margin-right: 10px; /* Space between icon and text */
+vertical-align: bottom;
+}
+
+.bio-container h3 {
+    font-family: "Times New Roman", Times, serif; /* Customize font */
+    color: #333; /* Text color */
+    line-height: 20px; /* Make the text height half of the image (40px) */
+    margin: 0; /* Optional: Removes any default margin */
+}
+    </style>
+	
+<style>
+    .navbar-nav li a {
+        font-size: 18px; /* Increase the font size here */
+        font-weight: bold; /* Optional: Make the text bold */
+    }
+</style>
+
+<style>
+  ol {
+    font-family: Arial, Helvetica, sans-serif; /* Corrected font family syntax */
+    font-size: 18px; /* Increased font size */
+  }
+</style>
+	
+  <!-- Page Content -->
+  <div class="container">
+    <div class="row">
+        <!-- Contact Info on the Sidebar -->
+        <div class="col-md-3 col-xs-12">
+            <div style="word-wrap: break-word; font-family: Arial, Helvetica, sans-serif; font-size: 28px;"><b>Weijieying Ren</b></div><br>
+            <div class="row"> <div class="col-md-10 col-xs-6"> <img style="width: 80%; height: 80%; max-width: 100%;" class="img-responsive" src="imgs/wjyren.png" alt=""></div></div><br>
+            <!-- <div> College of Information Sciences and Technology,<br> Pennsylvania State University</div> --> 
+		<div> Email: wjr5337@psu.edu</div>
+		<div> Address: E349, West Gate Building, University Park, PA 16802  <br></div> 
+		<!-- <div> <a href="cv.html" class="social-icon-cv-link-pad w-inline-block"><img src="images/cv.svg" width="33" alt="A link to my CV page." title="CV Page" class="icon-image"></a> </div>--> 
+	<div class="social-link-group-tight">
+          </div>
         </div>
-    </nav>
+    <h3 id="Biography"><img src="imgs/newton3.jpg" alt="Icon" class="emoji-image">Hello, welcome to my homepage!</h3>
 
-    <!-- Page Content -->
-    <div class="container">
+<p style="font-family: Arial, Helvetica, sans-serif; font-size: 18px;">
+    I'm a PhD student from the College of Information Sciences and Technology at the Pennsylvania State University. I'm super lucky to be advised by my best advisor <a href="http://faculty.ist.psu.edu/vhonavar/">Prof. Honavar</a>.
+</p>
+<p style="font-family: Arial, Helvetica, sans-serif; font-size: 18px;">
+    I obtained my Bachelor's from HeFei University of Technology (<a href="https://www.hfut.edu.cn/">HFUT</a>) and my Master's degree from the University of Science and Technology (<a href="https://en.ustc.edu.cn/">USTC</a>), respectively. After that, I worked as a Machine Learning Engineer in Singapore for approximately two years. In January 2021, I decided to pursue my Ph.D. and returned to campus.
+I generally use the name `Xiaoying Ren' in my research and daily life for its simplicity.
+</p>
+
+<p style="font-family: Arial, Helvetica, sans-serif; font-size: 18px;">
+    My current project focus on building a conversational system for diagnosis assistance(e.g., lab test order, patient matching, diagnosis prediction) with the collaboration of medical school in PSU.
+</p>
+
+      </div> 
+
         <div class="row">
-            <!-- Sidebar with Contact Info -->
-            <div class="col-md-3 col-xs-12">
-                <div class="bio-container">
-                    <div style="word-wrap: break-word; font-family: Arial, Helvetica, sans-serif; font-size: 28px;">
-                        <b>Weijieying Ren</b>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-10 col-xs-6">
-                            <img style="width: 80%; height: 80%; max-width: 100%;" class="img-responsive"
-                                src="imgs/wjyren.png" alt="">
-                        </div>
-                    </div><br>
-                    <div>Email: wjr5337@psu.edu</div>
-                    <div>Address: E349, West Gate Building, University Park, PA 16802</div>
-                </div>
-            </div>
+        <div class="column"></div>
+        <div class="column"></div>
+    </div> 
 
-            <div class="col-md-9 col-xs-12">
-                <h3 id="Biography"><img src="imgs/newton3.jpg" alt="Icon" class="emoji-image">Hello, welcome to my homepage!</h3>
-                <p style="font-family: Arial, Helvetica, sans-serif; font-size: 18px;">
-                    I'm a PhD student from the College of Information Sciences and Technology at the Pennsylvania State
-                    University. I'm lucky to be advised by my best advisor <a href="http://faculty.ist.psu.edu/vhonavar/">Prof. Honavar</a>.
-                </p>
-                <p style="font-family: Arial, Helvetica, sans-serif; font-size: 18px;">
-                    I obtained my Bachelor's from HeFei University of Technology (<a href="https://www.hfut.edu.cn/">HFUT</a>)
-                    and my Master's degree from the University of Science and Technology (<a href="https://en.ustc.edu.cn/">USTC</a>).
-                    After that, I worked as a Machine Learning Engineer in Singapore for approximately two years. In January 2021, I decided to pursue my Ph.D. and returned to campus.
-                    I generally use the name `Xiaoying Ren' in my research and daily life for simplicity.
-                </p>
-                <p style="font-family: Arial, Helvetica, sans-serif; font-size: 18px;">
-                    My current project focuses on building a conversational system for diagnosis assistance (e.g., lab test
-                    order, patient matching, diagnosis prediction) in collaboration with the medical school at PSU.
-                </p>
+<div style="text-align: center; display: flex; justify-content: center; align-items: center; gap: 20px;">
+    <p style="font-family: Arial, Helvetica, sans-serif; font-size: 25px;">    
+        <a href="https://drive.google.com/file/d/1765N0hToVFaBSiJQ5EkBQDAyVeDAncnT/preview" target="_blank" style="color: green;">Research Statement | </a>
+        <a href="https://drive.google.com/file/d/1S1k04xRZfG_eMtSTspRcRIHtoAgn5UXa/preview" target="_blank" style="color: green;">Teaching Statement | </a>
+        <a href="https://drive.google.com/file/d/1EbSFb_tOrBQUirw8K4KXILw8dNB7xF7o/preview" target="_blank" style="color: green;">Diversity Statement</a>
+    </p>
+</div>
 
-                <!-- Research Links -->
-                <div style="text-align: center; display: flex; justify-content: center; align-items: center; gap: 20px;">
-                    <p style="font-family: Arial, Helvetica, sans-serif; font-size: 25px;">
-                        <a href="https://drive.google.com/file/d/1765N0hToaEvT2xa9z51lLsH3kmyc-L27/view?usp=sharing"
-                            target="_blank"> Resume </a>
-                    </p>
-                    <p style="font-family: Arial, Helvetica, sans-serif; font-size: 25px;">
-                        <a href="https://scholar.google.com/citations?user=V-J8XikAAAAJ&hl=en" target="_blank"> Google Scholar </a>
-                    </p>
-                    <p style="font-family: Arial, Helvetica, sans-serif; font-size: 25px;">
-                        <a href="https://github.com/WeijieyingRen" target="_blank"> GitHub </a>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
+</p>
+	  
+
+	<div class="col">    
+		
+	<h3 id="Topics"> <b>Research Interests: Machine Learning for Healthcare</b></h3>
+         
+          <p style="font-family: Arial, Helvetica, sans-serif; font-size: 18px;">
+                 My scientific goal is to advance the integration of machine learning into clinical practice by designing clinical AI systems that are <b>informative, interactive, and affordable</b>. 
+		My current research centers around narrowing the gaps between <b>Data (Electronic Health Records (EHR) Data), Model (Continual Learning from Multi-modality Data), and Application (Interactive Conversational System for Lab Test Query and Diagnosis Assistance)</b>.
+                <ol> 
+			
+			<div class="row"> <div class="col-md-10 col-xs-6 text-center"> <img style="width: 100%; height: auto; max-width: 100%;" class="img-responsive" src="imgs/ovew_new_future.jpg" alt=""></div></div><br>
+                  
+                 <li> 
+                    Representation Learning for EHR Data: Heterogeneity and Irregularity:
+                    <ul>
+
+                    <li>  Representation Learing with Heteregeneous Data, e.g., tabualr data. (<b><a href="https://proceedings.mlr.press/v235/ren24b.html">ICML 24</a>, <a href="https://ieeexplore.ieee.org/abstract/document/10027732">In-submission Survey)</a></b></li>
+                    <li>  Representation Learing with Irregular Longitidinal Data. (<b><a href="http://faculty.ist.psu.edu/vhonavar/Papers/aaai24.pdf">AAAI-24</a></b>)</li>
+
+                   </ul> 
+                  </li>
+                  
+                  <li>
+                       Continual Learning with Multi-modality Data:
+                      <ul>
+                        <li> Continual Learning from Multi-modality Data (<b><a href="http://faculty.ist.psu.edu/vhonavar/Papers/aaai24.pdf">KDD-2022</a>, <a href="https://ieeexplore.ieee.org/abstract/document/10027732">ICDM-2022</a>, <a href="https://dl.acm.org/doi/pdf/10.1145/3583780.3615267?casa_token=PWphCruTxukAAAAA:cX5W2yQbSUOweYd7MZOJiioRJHAWKl9dYshDG_MAzu36A6IjioWpetcWdGBSqIIjghE9KRMeu-li">CIKM-2023</a> </b>) </li>
+                        <li> Continual Learning with a Small Model and Intelligent Data.  (<b><a href="http://faculty.ist.psu.edu/vhonavar/Papers/sdm24.pdf">SDM-2024</a></b>)</li>
+                      </ul>
+                  </li>
+
+		<li>
+                  Clinical Large Language Models (LLMs) for Diagnosis Assistance:
+			<ul>
+			<li>  Towards Human-centered Clinical Foundation Model for Diagnosis Prediction (<b><a href="">arxiv</a></b>). 
+			<li>   Clinical Foundation Models under Cost Pressure (<b><a href="">In-submission</a></b>)
+			</ul>
+		</li>	
+                  </li>
+                </ol>
+   
+              </p>
+      </div>
+		
+        <div class="col">    
+	<h3 id="Research">Research</h3>	
+<h3 style="font-family: Arial, sans-serif; font-size: 18px; font-weight: bold;">In Submission & Under-Review:</h3>
+	   
+            <ol>
+	    <li> 
+                DiaLLMs: Advancing Clinical Diagnosis Prediction with Foundation Models through Planning and Reasoning.<a href="">[PDF]</a><br>
+                <b>Weijieying Ren</b>, Tianxiang Zhao, Yuqing Huang, Vasant G Honavar <br>
+              </li>
+
+		<li> 
+                Survey of Deep Learning within Tabular Data: Foundations, Challenges, Advances and Future
+Directions.<a href="">[PDF]</a><br>
+                <b>Weijieying Ren</b>, Tianxiang Zhao, Vasant G Honavar <br>
+              </li>
+
+			<li> 
+                Read, Diagnose and Chat: Towards Explainable and Interactive LLMs-Augmented Depression
+Detection in Social Media.<a href="">[PDF]</a><br>
+                Wei Qin, Zetong Chen, Lei Wang, Yunshi Lan, <b>Weijieying Ren</b>, Richang Hong.<br>
+              </li>
+		    
+        
+            </ol>
+		
+		<h3 style="font-family: Arial, sans-serif; font-size: 18px; font-weight: bold;">Publications:</h3>
+            <ol>
+	  <li> 
+		TabLog: Test-Time Adaptation for Tabular Data Using Logic Rules. <a href="https://proceedings.mlr.press/v235/ren24b.html">[PDF]</a> <br>
+		<b>Weijieying Ren</b>, Xiaoting Li, Huiyuan Chen, Vineeth Mohan, Zhuoyi Wang, Mahaweta Das, Vasant G Honavar.<br>
+                The Forty-first International Conference on Machine Learning. (<i>ICML-2024</i>)
+              </li>
+    
+		<li> 
+		Inducing Clusters Deep Kernel Gaussian Process for Longitudinal Data.<a href="http://faculty.ist.psu.edu/vhonavar/Papers/aaai24.pdf">[PDF]</a> <br>
+		Junjie Liang, <b>Weijieying Ren</b>, Hanifi Sahar, Vasant G Honavar. <br>
+                The 38th Annual AAAI Conference on Artificial Intelligence. (<i>AAAI-2024</i>)
+              </li>
+		    
+		<li>  
+             EsaCL: An Efficient Continual Learning Algorithm.<a href="http://faculty.ist.psu.edu/vhonavar/Papers/sdm24.pdf">[PDF]</a> <br>
+                <b>Weijieying Ren</b>, Vasant G Honavar.<br>
+               In Proceedings of the SIAM International Conference on Data Mining. (<i>SDM-2024</i>).	
+              </li>
+		    
+	      <li> 
+		 Gradient-aware logit adjustment loss for long-tailed classifier.<a href="https://cmsworkshops.com/ICASSP2024/papers/accepted_papers.php">[PDF]</a> <br>
+                Fan Zhang, Wei Qin, <b>Weijieying Ren</b>, Lei Wang, Zetong Chen, Richang Hong. <br>
+                2024 IEEE International Conference on Acoustics, Speech and Signal Processing. (<i>ICASSP-2024</i>)
+              </li>
+		    
+              <li> 
+	       T-SaS: Toward shift-aware dynamic adaptation for streaming data.<a href="https://dl.acm.org/doi/pdf/10.1145/3583780.3615267?casa_token=PWphCruTxukAAAAA:cX5W2yQbSUOweYd7MZOJiioRJHAWKl9dYshDG_MAzu36A6IjioWpetcWdGBSqIIjghE9KRMeu-li">[PDF]</a> <br>
+                <b>Weijieying Ren</b>, Tianxiang Zhao, Wei Qin, Kunpeng Liu.<br>
+                In Proceedings of the 32nd ACM International on Conference on Information and Knowledge Management. (<i>CIKM-2023</i>) 
+	      </li>
+
+              <li> 
+               Semi-supervised Drifted Stream Learning with Short Lookback.<a href="https://dl.acm.org/doi/pdf/10.1145/3534678.3539297">[PDF]</a> <br>
+                <b> Weijieying Ren</b>, Pengyang Wang, Xiaolin Liu, Charles E.Huges, etc.<br>
+                In Proceedings of the 28th ACM SIGKDD Conference on Knowledge Discovery and Data Mining. (<i>KDD-2022</i>)      
+              </li>
+
+              <li> 
+                Mitigating Popularity Bias in Recommendation with Unbalanced Interactions: A Gradient Perspective.<a href="https://ieeexplore.ieee.org/abstract/document/10027732">[PDF]</a><br>
+                <b> Weijieying Ren</b>*, Lei Wang*, Kunpeng Liu, Ruocheng Guo, Ee-Peng Lim, etc. (* Equal Contribution)<br>
+                In Proceedings of 22nd ICDM IEEE International Conference on Data Mining. (<i>ICDM-2022</i>)
+              </li>
+		    
+              <!--  
+		<li> 
+                <a href="https://www.frontiersin.org/articles/10.3389/fdata.2021.787459/full">Fair and Effective Policing for Neighborhood Safety: Understanding and Overcoming Selection Biases.</a> <br>
+                <b>Weijieying Ren</b>, Kunpeng Liu, Tianxiang Zhao, etc.<br>
+                <i>Frontiers in Big Data 2021.</i> <br>
+              </li>
+	      -->
+		    
+              <li> 
+                Cross-Topic Rumor Detection using Topic-Mixtures.<a href="https://ink.library.smu.edu.sg/cgi/viewcontent.cgi?article=7863&context=sis_research">[PDF]</a> <br>
+                <b>Weijieying(Xiaoying) Ren</b>, Jing Jiang, Ling Min Serena Khoo, Hai Leong Chieu. 
+                The 16th Conference of the European Chapter of the Association for Computational Linguistics. (<i>EACL-2021</i>)
+              </li>
+              <li> 
+                Unsupervised Image Super-Resolution with an Indirect Supervised Path<a href="https://arxiv.org/abs/1910.02593">[PDF]</a> <br>
+                Zhen Han, Enyan Dai, Xu Jia, <b>Weijieying(Xiaoying) Ren</b>, Shuaijun Chen, Chunjing Xu, Jianzhuang Liu, Qi Tian <br>
+                The Conference on Computer Vision and Pattern Recognition Workshops. (<i>CVPR 2019 workshop</i>)
+              </li>
+
+              <li> 
+                Tracking and Forecasting Dynamics in Crowdfunding: A Basis-Synthesis Approach.<a href="http://staff.ustc.edu.cn/~linlixu/papers/icdm18.pdf">[PDF]</a><br>
+                <b> Weijieying(Xiaoying) Ren</b>, Linli Xu, Tianxiang Zhao, Chen Zhu, Junliang Guo, Enhong Chen.<br>
+                In Proceedings of 22nd ICDM IEEE International Conference on Data Mining. (<i>ICDM-2018</i>)         
+              </li>
+
+              <li> 
+                Enhancing Semantic Representations of Bilingual Word Embeddings with Syntactic Dependencies.<a href="http://staff.ustc.edu.cn/~linlixu/papers/ijcai18.pdf">[PDF]</a> <br> 
+                Linli Xu, Wenjun Ouyang <b>, Weijieying(Xiaoying) Ren </b>, Yang Wang, Liang Jiang. <br>
+                In Proceedings of the 27th International Joint Conference on Artificial Intelligence. (<i>IJCAI-2018</i>)
+                
+              </li>
+
+              <li> 
+                Robust Mapping Learning for Multi-view Multi-label Classification with Missing Labels.<a href="https://link.springer.com/chapter/10.1007/978-3-319-63558-3_46">[PDF]</a><br>
+                <b>Weijieying Ren</b>, Lei Zhang, Bo Jiang, Zhefeng Wang, Guangming Guo, Guiquan Liu <br>
+                Knowledge Science, Engineering and Management: 11th International Conference. (<i>KSEM-2018</i>)
+              </li>
+
+            </ol>
+
+	<h3 style="font-family: Arial, sans-serif; font-size: 18px; font-weight: bold;">Patent:</h3>
+            <ol>
+              <li> 
+                Interpretable Neural Network for Tabular data Classification (Submitted in 2023) <br>
+                <b>Weijieying Ren</b>, Xiaoting Li, Huiyuan Chen, Yuzhong Chen, etc.
+              </li>
+
+              <li> 
+                System, Method, and Computer Program Product for Analysis and Adaptation of Machine Learning Models for Tabular Data (Submitted in 2023) <br>
+                <b>Weijieying Ren</b>, Xiaoting Li, Huiyuan Chen, Yuzhong Chen, etc.
+              </li>
+            </ol>
+
+        <div class="col">    
+	<h3 id="Intern"><b>Intern Experience</b></h3>
+		<ol style="list-style-type: disc; font-size: 18px;"> <!-- Adjust font size here -->
+		    <li>Amazon, Applied Scientist Intern, May-Aug, 2024</li>
+		    <li>Visa Research, Applied Scientist Intern, May-Aug, 2023</li>
+		    <li>Amazon AWS, Applied Scientist Intern, May-Aug, 2022</li>
+		    <li>Noah’s Ark Labs, Jan-June, 2019</li>
+		</ol>
+      </div>
+
+        <div class="col">    
+          <h3 id="Service"><b>Service</b> </h3>
+	<ul style="list-style-type: disc; font-size: 18px;">
+	    <li>PC member: AAAI 2021-2023, KDD 2023-2024, ACM MM 2023-2024, CIKM 2022-2024, Neurips 2023 (dataset and benchmark track), SDM 2023-2024, IJCAI 2023-2024</li>
+	    <li>External Reviewer: PAKDD 2023, WSDM 2023</li>
+	    <li>Reviewer: TOIS, IEEE Big Data, Neurips 2024</li>
+	    <li>Panelist in 1st Annual IST Alumni Symposium, PSU</li>
+	    <li>Session Chair on time series forecasting@SDM 2024</li>
+	</ul>
+      </div>
+
+      <div class="col">
+    <h3 id="Award"><b> Award</b></h3>
+    <ul style="font-family: Arial, Helvetica, sans-serif; font-size: 18px;">
+        <li>AnitaB.org Advancing Inclusion Scholarship 2024</li>
+        <li>IST, SDM student travel award, 2024</li>
+        <li>KDD, ICDM student travel award, 2022</li>
+        <li>Sigspatial student volunteer award, 2021</li>
+        <li>Global Digital Scholarship in USTC, 2017</li>
+        <li>Scholarship in USTC, 2016-2017</li>
+        <li>Excellent graduates in AnHui Province, 2015</li>
+        <li>Excellent graduates in HFUT, 2015</li>
+        <li>Scholarship in HFUT, 2012-2014</li>
+        <li>National scholarship in HFUT, 2014</li>
+    </ul>
+</div>
+
+    <div class="col">    
+      <h3 id="Service"><b>Misc</b> </h3>     
+	 <ul style="font-family: Arial, Helvetica, sans-serif; font-size: 18px;">
+        <li>I come from the Henan Province (河南, South of the Yellow River) In China, so I'm also a Magician of noddles &#x1F35C. My unforgettable food is the Braised pork belly
+         in Anhui, Soup with Pepper in Henan, Plum duck in Suzhou, a special cold beverage in Singapore and Braised noodles by my mom.
+       </li>
+	</ul>
+  </div>
 </body>
 
 </html>
