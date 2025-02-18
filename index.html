@@ -23,122 +23,108 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
   <!-- Custom CSS -->
-  <style>
-    /* Body and page layout */
-    body {
-        margin: 0;
-        padding: 0;
-        font-family: Arial, Helvetica, sans-serif;
-        background-color: #f4f4f4; /* Optional background color */
+<style>
+    /* Reset default margin and padding */
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
     }
 
-    /* Container for the content */
+    /* Container to control the content width and center */
     .container {
-        width: 80%; /* Control content width */
-        max-width: 1200px; /* Limit the maximum width */
-        margin: 0 auto; /* Center the content */
-        padding: 20px;
-        background-color: white; /* Background color for content area */
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional shadow for a neat effect */
+      width: 80%; /* Control content width */
+      max-width: 1200px; /* Limit the maximum width */
+      margin: 0 auto; /* Center the content */
+      padding: 20px;
+      background-color: white; /* Background color for content area */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional shadow for neat effect */
     }
 
     /* Custom Navbar Styles */
     .navbar-inverse {
-        background: url('imgs/spring.jpg') no-repeat center center; /* Background image */
-        background-size: cover; /* Ensure image covers the navbar */
-        border: none; /* Remove border */
+      background: url('imgs/spring.jpg') no-repeat center center; /* Background image */
+      background-size: cover; /* Ensure image covers the navbar */
+      background-attachment: fixed; /* Fix the image in place */
+      border: none; /* Remove border */
+      height: 200px; /* Set the height of the navbar */
+      padding: 0;
     }
 
+    /* Navbar Text Styles */
     .navbar-inverse .navbar-nav > li > a {
-        color: white; /* White text */
-        font-weight: bold; /* Bold text */
+      color: white; /* White text */
+      font-weight: bold; /* Bold text */
     }
 
     .navbar-inverse .navbar-nav > li > a:hover {
-        color: #ffcc00; /* Hover effect color */
+      color: #ffcc00; /* Hover effect color */
     }
 
     .navbar-inverse .navbar-toggle {
-        background-color: white; /* Toggle button color */
+      background-color: white; /* Toggle button color */
     }
 
     .navbar-inverse .icon-bar {
-        background-color: black; /* Hamburger icon color */
+      background-color: black; /* Hamburger icon color */
     }
 
     /* Bio Container Styles */
     .bio-container {
-        display: flex;
-        align-items: center; /* Center items vertically */
-        margin-bottom: 20px; /* Add space between sections */
+      display: flex;
+      align-items: center; /* Center items vertically */
+      margin-bottom: 20px; /* Space between sections */
     }
 
     .bio-container img {
-        width: 50px; /* Image size */
-        height: 50px;
-        margin-right: 20px; /* Space between image and text */
+      width: 50px; /* Image size */
+      height: 50px;
+      margin-right: 20px; /* Space between image and text */
     }
 
     .bio-container h3 {
-        font-family: "Times New Roman", Times, serif;
-        color: #333; /* Text color */
-        line-height: 20px; /* Text line height */
-        margin: 0; /* Remove default margin */
+      font-family: "Times New Roman", Times, serif;
+      color: #333; /* Text color */
+      line-height: 20px; /* Text line height */
+      margin: 0; /* Remove default margin */
     }
 
     /* Icon size and spacing in bio container */
     .bio-container img {
-        width: 50px; /* Icon size */
-        height: 44px;
-        margin-right: 10px; /* Space between icon and text */
-        vertical-align: bottom; /* Align icon */
+      width: 50px; /* Icon size */
+      height: 44px;
+      margin-right: 10px; /* Space between icon and text */
+      vertical-align: bottom; /* Align icon */
     }
 
     /* Font size for Navbar links */
     .navbar-nav li a {
-        font-size: 18px; /* Increase font size */
-        font-weight: bold; /* Bold text */
+      font-size: 18px; /* Increase font size */
+      font-weight: bold; /* Bold text */
     }
 
     .emoji-image {
-        width: 70px; /* Size similar to an emoji */
-        height: 70px;
-        vertical-align: flex-end; /* Align image with text */
-        margin-right: 5px; /* Optional space between the image and text */
+      width: 70px; /* Size similar to an emoji */
+      height: 70px;
+      vertical-align: flex-end; /* Align image with text */
+      margin-right: 5px; /* Optional space between the image and text */
     }
     
     /* Ordered List Style */
     ol {
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 18px; /* Font size for list items */
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 18px; /* Font size for list items */
+    }
+
+    /* Adjust body and content layout */
+    .content-wrapper {
+      padding-top: 220px; /* Space below navbar */
+      min-height: 100vh; /* Ensure content stretches the full height */
+      background-color: #f4f4f4; /* Light background color for body */
     }
   </style>
 </head>
 
-
-<body>
-  <div class="container">
-    <!-- Your content here -->
-    <nav class="navbar navbar-inverse">
-      <!-- Navbar content -->
-    </nav>
-
-    <div class="bio-container">
-      <img src="your-image.jpg" alt="Image">
-      <h3>Your Content</h3>
-    </div>
-
-    <ol>
-      <li>Item 1</li>
-      <li>Item 2</li>
-      <li>Item 3</li>
-    </ol>
-    
-    <!-- More content can go here -->
-  </div>
-</body>
-
-  
 <body>
 <!-- Navigation -->
       <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
