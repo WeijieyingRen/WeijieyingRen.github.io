@@ -7,23 +7,7 @@
 -->
 
 <html lang="en">
-<head>
-  <title>Weijieying Ren</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  
-  <!-- External CSS Links -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Oswald:700" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-
-  <!-- External JS Links -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-
-  <!-- Custom CSS -->
-<style>
+  <style>
     /* Reset default margin and padding */
     body, html {
       margin: 0;
@@ -43,6 +27,7 @@
 
     /* Custom Navbar Styles */
     .navbar-inverse {
+      position: relative; /* Set the navbar to relative for positioning */
       background: url('imgs/spring.jpg') no-repeat center center; /* Background image */
       background-size: cover; /* Ensure image covers the navbar */
       background-attachment: fixed; /* Fix the image in place */
@@ -69,62 +54,29 @@
       background-color: black; /* Hamburger icon color */
     }
 
-    /* Bio Container Styles */
-    .bio-container {
-      display: flex;
-      align-items: center; /* Center items vertically */
-      margin-bottom: 20px; /* Space between sections */
+    /* Overlay Text on Navbar Image */
+    .navbar-inverse .navbar-nav {
+      position: absolute; /* Position links over the image */
+      top: 50%; /* Center vertically */
+      left: 50%; /* Center horizontally */
+      transform: translate(-50%, -50%); /* Adjust positioning */
+      display: flex; /* Align items horizontally */
+      gap: 20px; /* Space between each link */
     }
 
-    .bio-container img {
-      width: 50px; /* Image size */
-      height: 50px;
-      margin-right: 20px; /* Space between image and text */
+    .navbar-inverse .navbar-nav > li > a {
+      font-size: 20px; /* Adjust font size */
+      color: white;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Optional text shadow for better readability */
     }
 
-    .bio-container h3 {
-      font-family: "Times New Roman", Times, serif;
-      color: #333; /* Text color */
-      line-height: 20px; /* Text line height */
-      margin: 0; /* Remove default margin */
-    }
-
-    /* Icon size and spacing in bio container */
-    .bio-container img {
-      width: 50px; /* Icon size */
-      height: 44px;
-      margin-right: 10px; /* Space between icon and text */
-      vertical-align: bottom; /* Align icon */
-    }
-
-    /* Font size for Navbar links */
-    .navbar-nav li a {
-      font-size: 18px; /* Increase font size */
-      font-weight: bold; /* Bold text */
-    }
-
-    .emoji-image {
-      width: 70px; /* Size similar to an emoji */
-      height: 70px;
-      vertical-align: flex-end; /* Align image with text */
-      margin-right: 5px; /* Optional space between the image and text */
-    }
-    
-    /* Ordered List Style */
-    ol {
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 18px; /* Font size for list items */
-    }
-
-    /* Adjust body and content layout */
-    .content-wrapper {
-      padding-top: 220px; /* Space below navbar */
-      min-height: 100vh; /* Ensure content stretches the full height */
-      background-color: #f4f4f4; /* Light background color for body */
+    /* Make navbar links bold on hover */
+    .navbar-inverse .navbar-nav > li > a:hover {
+      color: #ffcc00;
     }
   </style>
 </head>
-
+	
 <body>
 <!-- Navigation -->
       <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
