@@ -7,7 +7,7 @@
 -->
 
 <html lang="en">
- <head>
+<head>
   <title>Weijieying Ren</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -31,31 +31,23 @@
       height: 100%;
     }
 
-    /* Container to control the content width and center */
-    .container {
-      width: 80%; /* Control content width */
-      max-width: 1200px; /* Limit the maximum width */
-      margin: 0 auto; /* Center the content */
-      padding: 20px;
-      background-color: white; /* Background color for content area */
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional shadow for neat effect */
-    }
-
     /* Custom Navbar Styles */
     .navbar-inverse {
-      position: relative; /* Set the navbar to relative for positioning */
       background: url('imgs/spring.jpg') no-repeat center center; /* Background image */
       background-size: cover; /* Ensure image covers the navbar */
       background-attachment: fixed; /* Fix the image in place */
       border: none; /* Remove border */
       height: 200px; /* Set the height of the navbar */
       padding: 0;
+      z-index: 10; /* Ensure navbar is on top */
     }
 
     /* Navbar Text Styles */
     .navbar-inverse .navbar-nav > li > a {
       color: white; /* White text */
       font-weight: bold; /* Bold text */
+      font-size: 20px; /* Adjust font size */
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Optional text shadow for better readability */
     }
 
     .navbar-inverse .navbar-nav > li > a:hover {
@@ -70,35 +62,58 @@
       background-color: black; /* Hamburger icon color */
     }
 
-    /* Overlay Text on Navbar Image */
+    /* Navbar Centering */
     .navbar-inverse .navbar-nav {
-      position: absolute; /* Position links over the image */
-      top: 50%; /* Center vertically */
-      left: 50%; /* Center horizontally */
-      transform: translate(-50%, -50%); /* Adjust positioning */
       display: flex; /* Align items horizontally */
-      gap: 20px; /* Space between each link */
+      justify-content: center; /* Center the links */
+      align-items: center; /* Vertically center links */
+      height: 100%; /* Take up full height of the navbar */
     }
 
-    .navbar-inverse .navbar-nav > li > a {
-      font-size: 20px; /* Adjust font size */
-      color: white;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Optional text shadow for better readability */
+    .navbar-inverse .navbar-nav > li {
+      padding: 0 15px; /* Add space between the links */
     }
 
-    /* Make navbar links bold on hover */
-    .navbar-inverse .navbar-nav > li > a:hover {
-      color: #ffcc00;
+    /* Content Area */
+    .container {
+      width: 80%; /* Control content width */
+      max-width: 1200px; /* Limit the maximum width */
+      margin: 20px auto; /* Center the content with space above */
+      padding: 20px;
+      background-color: white; /* Background color for content area */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional shadow for neat effect */
     }
-
-    .emoji-image {
-    width: 70px; /* Size similar to an emoji */
-    height: 70px;
-    vertical-align: flex-end; /* Align image with text */
-    margin-right: 5px; /* Optional space between the image and text */
-        }
   </style>
 </head>
+
+
+
+	
+<body>
+
+  <!-- Navbar with image background -->
+  <nav class="navbar navbar-inverse">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">Weijieying Ren</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Research</a></li>
+        <!-- Add more links as needed -->
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Content below navbar -->
+  <div class="container">
+    <h1>Welcome to My Page</h1>
+    <p>This is the content below the navbar with an image background.</p>
+    <p>Feel free to add more content here.</p>
+  </div>
+
+</body>
+
 	
 <body>
 <!-- Navigation -->
